@@ -1,34 +1,236 @@
 <!DOCTYPE html>
-<head>
-    <meta charset="UTF-8" content="Basic environment">
-    <title>Vr-holder</title>
-    <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
-    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+<head xmlns:style="http://www.w3.org/1999/xhtml">
+  <meta charset="UTF-8">
+  <meta name="language" content="English">
+  <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+  <script src="https://rawgit.com/ngokevin/kframe/csstricks/scenes/aincraft/components/random-color.js"></script>
+  <script src="https://rawgit.com/ngokevin/kframe/csstricks/scenes/aincraft/components/snap.js"></script>
+  <script src="https://unpkg.com/aframe-event-set-component@5/dist/aframe-event-set-component.min.js"></script>
+  <script src="https://unpkg.com/aframe-layout-component@5.3.0/dist/aframe-layout-component.min.js"></script>
+  <script src="https://unpkg.com/aframe-template-component@3.2.1/dist/aframe-template-component.min.js"></script>
+  <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.js"></script>
 </head>
 <body>
-<a-scene environment=" preset: japan">
-    <a-assests>
-        <img id="boxTexture" src="https://i.imgur.com/mYmmbrp.jpg">
+  <style>
+    body {background-image : url("random.jpg");}
+    h1 {color : white;}
+    h2 {color: Green;}
+    h3 {color: #b01011}
+
+  </style>
+
+<div align="center">
+  <h1 style="background-color:violet;">Welcome!</h1></div>
+
+<div id="menu">
+
+</div>
+
+<div class="innerpage" id="innerID">
+  <iframe  name="InsideFrame" id="insideID" src="main.html" type="text/html" width="0" height="0" frameBorder="0"></iframe>
+</div>
+<h1 style="color:white;">Hi! Im Juanita Benjamin.</h1>
+
+<div class="right">
+   <h3 style="text-align: left;">Click for a surprise</h3>
+  <img id = "stem" src = "stem.gif" width="150" height="165" style="display:none">
+  <button type = "button" align="center"
+   onclick= "document.getElementById('stem').style.display='block'">Show</button>
+  <button type = "button"
+   onclick = "document.getElementById('stem').style.display='none'">Hide</button>
+</div>
+
+<h2 style="text-align:center;">"Emerging Computer Scientist"</h2>
+
+
+<p align="center">I decided to emerge myself in a bachelors degree for computer science <br>because I was alwaysinterested of how
+  the computer software works,<br> or even how was I able to see what is on my screen. <br>I would like to be one of the innovators <br>
+  in the technology community to help mold our future in tech.</p>
+<div class="center">
+  <p>My Future Goals:</p>
+  <ul>
+    <li>MS Computer Science</li>
+    <li>PhD in AI/Cognitive Science</li>
+    <li>Tech CEO</li>
+  </ul>
+</div>  
+
+<style>
+  .right {
+    position: absolute;
+    right: 0px;
+    width: 300px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+  }
+</style>
+<div class="right">
+  <p>"Better to be qualified when opportunity swings by,<br> than to be waiting to be qualified when the opportunity arrive"-Neal Benjamin</p>
+</div>
+
+<div align="center">
+  <h3><i><b>Welcome to my Virtual Reality </b></i></h3>
+</div>
+
+<picture>
+  <img src="JuanitaGitHub.jpg" alt="Girl Picture" width="500" height="356">
+</picture>
+
+
+<style>
+    table {
+      font-family: times new roman, san-serif;
+      border-collapse: collapse;
+      width: 70%;
+      height: 50%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      padding-right: 2px;
+      padding-left: 2px;
+    }
+
+    tr:nth-child(odd) {
+      background-color: hotpink;
+    }
+</style>
+
+<style>
+  div.absolute {
+    position: absolute;
+    top: 600px;
+    right: 0px;
+  }
+</style>
+<div class="absolute">
+  <table align="right">
+    <tr>
+      <th>Past Classes</th>
+      <th>Present Classes</th>
+      <th>Future Classes</th>
+    </tr>
+    <tr>
+      <td>Programming Principles I</td>
+      <td>Programing Principles II</td>
+      <td>Data Structures</td>
+    </tr>
+    <tr>
+      <td>Calculus I</td>
+      <td>Calculus II</td>
+      <td>Calculus III</td>
+    </tr>
+    <tr>
+      <td>History 2300</td>
+      <td>Discrete Computational Structures</td>
+      <td>Theory of Automata</td>
+    </tr>
+    <tr>
+      <td>Astronomy</td>
+      <td>Technical Comms</td>
+      <td>Pyshics I</td>
+    </tr>
+    <tr>
+      <td>Theatre Appreciation</td>
+      <td>Texas Politics</td>
+      <td>History 2306</td>
+    </tr>
+  </table>
+
+</div>
+
+
+
+<div class="left">
+  <h3>My Education Track:</h3>
+  <p align="center"></p>
+  <ul>
+    <li> AS, English, Dominica State College, January 2016 - May 2018
+    <li> BS, Computer Science, September 2018 - Present
+  </ul>
+</div>
+
+<p style="color:black;">Here are a few things about me:</p>
+<ul>
+  <li>I am the President of Tech Trio.</li>
+  <li>I am a McNairs Scholar.</li>
+</ul>
+
+<p>My Hobbies:</p>
+<ul>
+  <li>Reading
+  <li>Working-out
+  <li>Watching fictional Tv shows
+</ul>
+
+
+<p><strong>Note:</strong> I enjoy learning how to code, and engaging in other activities that help me grow
+  more as a computer scientist.</p>
+<a href="https://github.com/Juanita9812/Juanita9812.github.io">This is my GitHub page...check it out.</a>
+
+  <style>
+    a-scene {
+      position: absolute;
+      height: 200px;
+      width: 250px;
+      top: 500px;
+      left: 645px;
+    }
+  </style>
+
+  <div>
+    <a-scene embedded>
+      <a-entity environment="preset: egypt"></a-entity>
+      <a-assests>
+        <img id="boxTexture" src="galaxy.jpg">
+        <img id="Purple" src="Purple.jpg">
         <audio src="https://cdn.aframe.io/basic-guide/audio/backgroundnoise.wav" autoplay
                preload></audio>
-    </a-assests>
-    <a-light type="ambient"></a-light>
-    <a-box src="https://i.imgur.com/mYmmbrp.jpg"
-           position="0 2 -5"
-           rotation="0 45 45"
-           scale="2 2 2"
-           animation__position="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; delay: 0; loop: true"
-           animation__mouseenter="property: scale; to: 2.3 2.3 2.3; dur: 300; startEvents: mouseenter"
-           animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
-    <a-entity>
+        <a-mixin id="voxel"
+                 geometry="primitive: box; height: 0.5; width: 0.5; depth: 0.5"
+                 material="shader: standard"
+                 random-color
+                 snap="offset: 0.25 0.25 0.25; snap: 0.5 0.5 0.5"></a-mixin>
+      </a-assests>
+      <a-light type="ambient"></a-light>
+      <a-box src="#boxTexture"
+             position="0 2 -5"
+             rotation="0 45 45"
+             scale="2 2 2"
+             animation__position="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; delay: 0; loop: true"
+             animation__mouseenter="property: scale; to: 2.3 2.3 2.3; dur: 300; startEvents: mouseenter"
+             animation__mouseleave="property: scale; to: 2 2 2; dur: 300; startEvents: mouseleave"></a-box>
+      <a-entity>
         <a-animation attribute="scale" begin="5000" to="2 2 2"></a-animation>
-    </a-entity>
-
-    <a-entity text="value: Greetings, Humans!; color: black; width: 5; anchor: align" position="-0.9 0.2 -3" scale="1.5 1.5 1.5"></a-entity>
-    <a-camera>
+      </a-entity>
+      <a-entity geometry="primitive: box; depth: 0.5 height: 0.5; width: 0.5" material="shader: standard" position="4 0.5 -2"
+                random-color
+                animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; delay: 0; loop: true">
+      </a-entity>
+      <a-entity text="value: Greetings, Humans!; color: black; width: 5; anchor: align" position="-2 4.5 -4" scale="1.5 1.5 1.5"></a-entity>
+      <a-camera>
         <a-cursor color="#FAFAFA"></a-cursor>
-    </a-camera>
+      </a-camera>
+      <a-entity mixin="voxel" position="-1 5 -4"></a-entity>
+      <a-entity mixin="voxel" position="-15 2 -2" animation="property: rotation; to:0 360 0; repeat: indefinite"></animation>
+      </a-entity>
+      <a-entity mixin="voxel" position="-10 1 -2"
+                animation="property: object3D.position.y; to: 2.2; dir: alternate; dur: 2000; delay: 1500; loop: true">
 
-</a-scene>
+      </a-entity>
+      <a-entity mixin="voxel" position="1 0 -2"></a-entity>
+      <a-entity id="blushing-cube" geometry="primitive: box" position
+                animation="property: rotation; from: white; to: red; dur: 1000">
+      </a-entity>
+      <a-entity
+              text="value: <<<Drag left; color: black; width: 4; anchor: align"
+              position="-3 1 -4"
+              scale="1.5 1.5 1.5"></a-entity>
+    </a-scene>
+  </div>
 </body>
 </html>
