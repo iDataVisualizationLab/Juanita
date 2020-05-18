@@ -1,2 +1,2 @@
 # Juanita9812.github.io
-Online link: iDataVisualizationLab/Juanita
+Online link: https://idatavisualizationlab.github.io/Juanita/
