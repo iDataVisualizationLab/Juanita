@@ -1,225 +1,210 @@
 
 <!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    *{
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-<meta charset="UTF-8">
-<meta name="language" content="English">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  body {background-image : url("random.jpg");}
-  h1 {color : white;}
-  h2 {color: Green;}
-  h3 {color: #b01011}
-  #mySidenav a {
-    position: absolute;
-    left: -80px;
-    transition: 0.3s;
-    padding: 15px;
-    width: 100px;
-    text-decoration: none;
-    font-size: 20px;
-    color: white;
-    border-radius: 0 5px 5px 0;
-  }
+    .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("JuanitaGitHub.jpg");
+      height: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
 
-  #mySidenav a:hover {
-    left: 0;
-  }
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
 
-  #home {
-    top: 20px;
-    background-color: #4CAF50;
-  }
+    .hero-text button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 25px;
+      color: black;
+      background-color: #ddd;
+      text-align: center;
+      cursor: pointer;
+    }
 
-  #about {
-    top: 80px;
-    background-color: #2196F3;
-  }
+    .hero-text button:hover {
+      background-color: #555;
+      color: white;
+    }
 
-  #project {
-    top: 140px;
-    background-color: #f44336;
-  }
+    .navbar{
+      overflow: hidden;
+      /*background-color: deepskyblue;*/
+      position: sticky;
+      position: -webkit-sticky;
+      top: 0;
+    }
+    .navbar a{
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    /*right-aligned link*/
+    .navbar a.right{
+      float: right;
+    }
+    /*change color on hover*/
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    /*active/current link*/
+    .navbar a.active {
+      background-color: #666;
+      color: white;
+    }
+    /* Column container*/
+    .row {
+      display: -ms-flexbox; /* IE10 */
+      display: flex;
+      -ms-flex-wrap: wrap; /* IE10 */
+      flex-wrap: wrap;
+    }
 
-  #contact {
-    top: 200px;
-    background-color: #555
-  }
-</style>
+    /*Sidebar/left column*/
+    .side {
+      -ms-flex: 30%; /* IE10 */
+      flex: 30%;
+      background-color: /*palevioletred*/ #f1f1f1 ;
+      padding: 20px;
+    }
 
+    .main{
+      -ms-flex: 70%;
+      flex: 70%;
+      background-color: white;
+      padding: 20px;
+    }
+
+    /* Fake image, just for this example */
+    .fakeimg {
+      background-color: #aaa;
+      width: 100%;
+      padding: 10px;
+    }
+
+
+    /* Footer */
+    .footer {
+      padding: 20px;
+      text-align: center;
+      background: grey;
+    }
+    /* Responsive layout - when the screen is less than 700px wide,
+    make the two columns stack on top of each other instead of next to each other */
+    @media screen and (max-width: 700px) {
+      .row {
+        flex-direction: column;
+      }
+    }
+
+    /* Responsive layout - when the screen is less than 400px wide,
+    make the navigation links stack on top of each other instead of next to each other */
+    @media screen and (max-width: 400px) {
+      .navbar a {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<div id="mySidenav" class="sidenav">
-  <a href="web.html" id="home">Home</a>
-  <a href="about.html" id="about">About</a>
-  <a href="project.html" id="project">Project</a>
-  <a href="contact.html" id="contact">Contact</a>
+<div class="hero-image">
+  <div class="hero-text">
+    <h1 style="font-size:50px">I am Juanita Benjamin</h1>
+    <p></p>
+  </div>
 </div>
 
-<div align="center">
-  <h1 style="background-color:violet;">Welcome!</h1></div>
-
-
-<div class="innerpage" id="innerID">
-  <iframe  name="InsideFrame" id="insideID" src="main.html" type="text/html" width="0" height="0" frameBorder="0"></iframe>
-</div>
-<h1 style="color:white; text-align: center;">Hi! Im Juanita Benjamin.</h1>
-
-<div class="right">
-  <h3 style="text-align: left;">Click for a surprise</h3>
-  <img id = "stem" src = "stem.gif" width="150" height="165" style="display:none">
-  <button type = "button" align="center"
-          onclick= "document.getElementById('stem').style.display='block'">Show</button>
-  <button type = "button"
-          onclick = "document.getElementById('stem').style.display='none'">Hide</button>
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html" class="active">About</a>
+  <a href="project.html">Projects</a>
+  <a href="contact.html">Contact</a>
+  <a href="Timeline.html">Research Timeline</a>
 </div>
 
-<h2 style="text-align:center;">"Emerging Computer Scientist"</h2>
-
-
-<p align="center">I decided to emerge myself in a bachelors degree for computer science <br>because I was alwaysinterested of how
-  the computer software works,<br> or even how was I able to see what is on my screen. <br>I would like to be one of the innovators <br>
-  in the technology community to help mold our future in tech.</p>
-<div class="center">
-  <p>My Future Goals:</p>
-  <ul>
-    <li>MS Computer Science</li>
-    <li>PhD in AI/Cognitive Science</li>
-    <li>Tech CEO</li>
-  </ul>
+<div class="row">
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="fakeimg" style="height:400px;">
+      <img src="chicago.jpg" width="226" height="400">
+    </div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="img" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div><br>
+    <div class="fakeimg" style="height:60px;">Image</div>
+  </div>
+  <div class="main">
+    <h2>Being A McNair Scholar</h2>
+    <h5>Title description, Dec 7, 2017</h5>
+    <div class="fakeimg" style="height: 250px;">
+      Image
+    </div>
+    <p style="text-align:left" class="a">Some text..</p>
+    <p style="text-align:left"><br>Sunt in culpa qui officia deserunt mollit <br>anim id est
+      laborum consectetur adipiscing elit,<br>sed do eiusmod tempor incididunt ut<br>
+      labore et dolore magna aliqua. <br>Ut enim ad minim veniam, quis nostrud
+      exercitation ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg" style="height:250px;">
+      Image
+    </div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
 </div>
 
-<style>
-  .right {
-    position: absolute;
-    right: 0px;
-    width: 300px;
-    border: 3px solid #73AD21;
-    padding: 10px;
+<div class="footer">
+  <h2>Black Girl Magic</h2>
+</div>
+<script>
+  window.onscroll = function() {myFunction()};
+
+  var navbar = document.getElementById("navbar");
+  var sticky = navbar.offsetTop;
+
+  function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("sticky")
+    } else {
+      navbar.classList.remove("sticky");
+    }
   }
-</style>
-<div class="right">
-  <p>"Better to be qualified when opportunity swings by,<br> than to be waiting to be qualified when the opportunity arrive"-Neal Benjamin</p>
-</div>
-<div>
-  <a href="https://github.com/Juanita9812/Juanita9812.github.io">This is my GitHub page...check it out.</a>
-</div>
-<picture>
-  <img src="JuanitaGitHub.jpg" alt="Girl Picture" width="500" height="356">
-</picture>
-
-
-<style>
-  table {
-    font-family: times new roman, san-serif;
-    border-collapse: collapse;
-    width: 70%;
-    height: 50%;
-  }
-
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding-top: 2px;
-    padding-bottom: 2px;
-    padding-right: 2px;
-    padding-left: 2px;
-  }
-
-  tr:nth-child(odd) {
-    background-color: hotpink;
-  }
-</style>
-
-<style>
-  div.absolute {
-    position: absolute;
-    top: 600px;
-    right: 0px;
-  }
-</style>
-<div class="absolute">
-  <table align="right">
-    <tr>
-      <th>Past Classes</th>
-      <th>Present Classes</th>
-      <th>Future Classes</th>
-    </tr>
-    <tr>
-      <td>Programming Principles I</td>
-      <td>Programing Principles II</td>
-      <td>Data Structures</td>
-    </tr>
-    <tr>
-      <td>Calculus I</td>
-      <td>Calculus II</td>
-      <td>Calculus III</td>
-    </tr>
-    <tr>
-      <td>History 2300</td>
-      <td>Discrete Computational Structures</td>
-      <td>Modern Digital Systems</td>
-    </tr>
-    <tr>
-      <td>Astronomy</td>
-      <td>Technical Comms</td>
-      <td>Pyshics I</td>
-    </tr>
-    <tr>
-      <td>Theatre Appreciation</td>
-      <td>Texas Politics</td>
-      <td>History 2306</td>
-    </tr>
-  </table>
-
-</div>
-
-
-
-<div class="left">
-  <h3>My Education Track:</h3>
-  <p align="center"></p>
-  <ul>
-    <li><h4> AS, English, Dominica State College, January 2016 - May 2018</h4></li>
-    <li><h4> BS, Computer Science, September 2018 - Present</h4></li>
-  </ul>
-</div>
-
-<p style="color:black;"><h3>Here are a few things about me:</h3></p>
-<ul>
-  <li><h4>I am the President of Tech Trio.</h4></li>
-  <li><h4>I am a McNairs Scholar.</h4></li>
-</ul>
-
-<p><h3>My Hobbies:</h3></p>
-<ul>
-  <li><h4>Reading</h4></li>
-  <li><h4>Working-out</h4></li>
-  <li><h4>Watching fictional Tv shows</h4></li>
-</ul>
-
-<div>
-  <p style="text-align: right"><strong>Note:</strong> I enjoy learning how to code, <br>and engaging in other activities that help me grow
-    more as a computer scientist.</br></p>
-</div>
-
-<style>
-  a-scene {
-    position: absolute;
-    height: 200px;
-    width: 250px;
-    top: 500px;
-    left: 645px;
-  }
-</style>
-
+</script>
+<!--script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-4aaa290f-f743-4568-acea-05a001e5911e"></div-->
 </body>
 </html>
 
-<!--.parallax {
-background-image: url("Roseau.jpg");
-height: 100%;
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;-->
