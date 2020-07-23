@@ -13,65 +13,7 @@
   <script src=" aframe-extras.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.0.1/dist/aframe-extras.min.js"></script>
   <script>
-      /*AFRAME.registerComponent('box', {
-          schema: {
-              width: {type: 'number', default: 1},
-              height: {type: 'number', default: 1},
-              depth: {type: 'number', default: 1},
-              color: {type: 'color', default: '#AAA'}
-          },
-
-          /**
-           * Initial creation and setting of the mesh.
-           */
-          /*init: function () {
-              var data = this.data;
-              var el = this.el;
-
-              // Create geometry.
-              this.geometry = new THREE.BoxBufferGeometry(data.width, data.height, data.depth);
-
-              // Create material.
-              this.material = new THREE.MeshStandardMaterial({color: data.color});
-
-              // Create mesh.
-              this.mesh = new THREE.Mesh(this.geometry, this.material);
-
-              // Set mesh on entity.
-              el.setObject3D('mesh', this.mesh);
-          }
-      });
-      AFRAME.registerComponent('scale-on-mouseenter',{
-          schema: {
-              to: {default: '2.5 2.5 2.5', type: 'vec3'}
-          },
-
-          init: function () {
-              var data= this.data;
-              this.el.addEventListener('mouseenter', function () {
-                  this.el.object3D.scale.copy(data.to);
-
-              });
-
-          }
-      });*/
-
-      /*AFRAME.registerComponent('cursor-listener', {
-        init: function () {
-          this.el.addEventListener('click', function (evt) {
-            console.log('I was clicked');
-          });
-        }
-      });
-      AFRAME.registerComponent('raycaster-autorefresh', {
-        init: function () {
-          var el = this.el;
-          this.el.addEventListener('model-loaded', function () {
-            var cursorEl = el.querySelector('[raycaster]');
-            cursorEl.components.raycaster.refreshObjects();
-          });
-        }
-      });*/
+    []
       AFRAME.registerComponent('material-displacement', {
         /**
 
